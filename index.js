@@ -10,17 +10,17 @@ if (process.env.NODE_ENV == 'production') {
 console.log(bot.options)
 
 bot.onText(/^\/start$/, function(msg) {
-	bot.sendMessage(msg.from.id, 'Sorry, there\'s nothing I can to for you here. Use me inline, like:\n@shruggerbot I don\'t care')
+	bot.sendMessage(msg.from.id, 'Sorry, there\'s not much I can to for you here. Use me inline, like:\n@shruggerbot I don\'t care\nOr get details about me through /about')
 })
 
 bot.onText(/^\/help$/, function(msg) {
-	bot.sendMessage(msg.from.id, 'Simply use me inline, like: @shruggerbot I don\'t care')
+	bot.sendMessage(msg.from.id, 'Simply use me inline, like: @shruggerbot I don\'t care\nYou can also get details about me on /about')
 })
 
 bot.onText(/^\/about$/, function(msg) {
 	bot.sendMessage(msg.from.id,
 		'*Bot creator*: @igorsantos07\n'+
-		'*Source code*: https://github.com/igorsantos07/shrugger-bot\n'+
+		'*Source code*: [shrugger-bot@github](https://github.com/igorsantos07/shrugger-bot)\n'+
 		'This bot was inspired by the [shrug command](https://get.slack.help/hc/en-us/articles/201259356-Using-slash-commands) from [Slack](https://slack.com)'
 	, { parse_mode: 'Markdown' })
 })
