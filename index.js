@@ -24,14 +24,14 @@ bot.on('inline_query', function(msg) {
 		options = [
 			{
 				type: 'article',
-				id: msg.id+1,
+				id: 'before',
 				title: shrug+' '+msg.query,
 				message_text: shrug+' '+msg.query,
 				description: 'Shrug first'
 			},
 			{
 				type: 'article',
-				id: msg.id+2,
+				id: 'after',
 				title: msg.query+' '+shrug,
 				message_text: msg.query+' '+shrug,
 				description: 'Surprise shrug at the end'
@@ -40,7 +40,7 @@ bot.on('inline_query', function(msg) {
 	} else {
 		options = [{
 			type: 'article',
-			id: msg.id+3,
+			id: 'lonely',
 			title: shrug,
 			message_text: shrug,
 			description: 'Lazy shrug'
