@@ -3,6 +3,7 @@ var bot = new Bot(process.env.BOT_TOKEN, (process.env.NODE_ENV == 'production')?
 	{ webHook: { host: 'localhost', port: process.env.PORT }} :
 	{ polling: true }
 )
+console.log(bot)
 
 bot.onText(/\/start/, function(msg) {
 	bot.sendMessage(msg.from.id, 'Sorry, there\'s nothing I can to for you here. Use me inline, like:\n@shruggerbot I don\'t care')
