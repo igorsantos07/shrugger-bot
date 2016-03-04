@@ -19,9 +19,10 @@ bot.onText(/^\/help$/, function(msg) {
 
 bot.onText(/^\/about$/, function(msg) {
 	bot.sendMessage(msg.from.id,
-		'*Bot creator*: @igorsantos07\n'+
-		'*Source code*: [shrugger-bot@github](https://github.com/igorsantos07/shrugger-bot)\n'+
-		'This bot was inspired by the [shrug command](https://get.slack.help/hc/en-us/articles/201259356-Using-slash-commands) from [Slack](https://slack.com)'
+		'[shrugger-bot@github](https://github.com/igorsantos07/shrugger-bot) by @igorsantos07\n'+
+		'\n'+
+		'This bot was inspired by the [shrug command](https://get.slack.help/hc/en-us/articles/201259356-Using-slash-commands) from [Slack](https://slack.com).\n'+
+		'Enjoy and keep shrugging!'
 	, { parse_mode: 'Markdown' })
 })
 
