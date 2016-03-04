@@ -1,0 +1,23 @@
+{
+  "name": "shrugger-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot for ¯\\_(ツ)_/¯",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/igorsantos07/shruggerbot.git"
+  },
+  "keywords": [
+    "telegram",
+    "bot"
+  ],
+  "author": "Igor Santos",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/igorsantos07/shruggerbot#readme",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.20.1"
+  }
+}
