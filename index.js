@@ -1,9 +1,9 @@
 var Bot = require('node-telegram-bot-api')
 var bot = new Bot(process.env.BOT_TOKEN, (process.env.NODE_ENV == 'production')?
-	{ webHook: { host: 'localhost', port: process.env.PORT }} :
+	{ webHook: { host: process.env.IP, port: process.env.PORT }} :
 	{ polling: true }
 )
-console.log(bot)
+console.log(bot.options)
 
 bot.onText(/\/start/, function(msg) {
 	bot.sendMessage(msg.from.id, 'Sorry, there\'s nothing I can to for you here. Use me inline, like:\n@shruggerbot I don\'t care')
@@ -45,3 +45,6 @@ bot.on('inline_query', function(msg) {
 
 	bot.answerInlineQuery(msg.id, options)
 })
+
+console.log(bot.textRegexpCallbacks)
+console.log(bot.onReplyToMessages)
