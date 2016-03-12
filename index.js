@@ -20,6 +20,7 @@ bot.onText(/^\/help$/, function(msg) {
 bot.onText(/^\/about$/, function(msg) {
 	bot.sendMessage(msg.from.id,
 		'[shrugger-bot@github](https://github.com/igorsantos07/shrugger-bot) by @igorsantos07\n'+
+		'I have a brother called *YACC* (_Yet Another Clear Chat Bot_ - @clearchatbot), he may help you with compromising chat screens, both in groups or individual conversations.\n'+
 		'\n'+
 		'This bot was inspired by the [shrug command](https://get.slack.help/hc/en-us/articles/201259356-Using-slash-commands) from [Slack](https://slack.com).\n'+
 		'Enjoy and keep shrugging!'
