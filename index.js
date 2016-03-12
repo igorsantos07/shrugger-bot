@@ -2,8 +2,8 @@ var Bot = require('node-telegram-bot-api')
 var bot
 
 if (process.env.NODE_ENV == 'production') {
-	bot = new Bot(process.env.BOT_TOKEN, { webHook: { port: process.env.PORT }});
-	bot.setWebHook(process.env.HOST+':443/bot'+bot.token)
+	bot = new Bot(process.env.BOT_TOKEN, { webHook: { port: process.env.INSIDE_PORT, host: 'localhost' }});
+	bot.setWebHook(process.env.OUTSIDE_HOST+':'+process.env.OUTSIDE_PORT+'/bot'+bot.token)
 } else {
 	bot = new Bot(process.env.BOT_TOKEN, { polling: true });
 }
