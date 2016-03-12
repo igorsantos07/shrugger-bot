@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://bitbucket.org/igorsantos07/shruggerbot.git"
+    "url": "https://github.com/igorsantos07/shrugger-bot.git"
   },
   "keywords": [
     "telegram",
     "bot"
   ],
   "author": "Igor Santos",
-  "license": "ISC",
-  "homepage": "https://bitbucket.org/igorsantos07/shruggerbot#readme",
+  "license": "MIT",
+  "homepage": "https://github.com/igorsantos07/shrugger-bot",
   "dependencies": {
     "node-telegram-bot-api": "^0.20.1"
   }
