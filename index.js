@@ -10,7 +10,7 @@ if (process.env.NODE_ENV == 'production') {
 console.log(bot.options)
 
 bot.onText(/^\/start$/, function(msg) {
-	bot.sendMessage(msg.from.id, 'Sorry, there\'s not much I can to for you here. Use me inline, like:\n@shruggerbot I don\'t care\nOr get details about me through /about')
+	bot.sendMessage(msg.from.id, 'Sorry, there\'s not much I can do for you here. Use me inline, like:\n@shruggerbot I don\'t care\nOr get details about me through /about')
 })
 
 bot.onText(/^\/help$/, function(msg) {
